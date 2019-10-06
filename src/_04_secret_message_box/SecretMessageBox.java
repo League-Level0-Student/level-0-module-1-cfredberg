@@ -26,8 +26,12 @@ String message = JOptionPane.showInputDialog("PERSON 1: type a secret message");
 	//    if they can guess the passcode
 JOptionPane.showMessageDialog(null, "PERSON 2: if you can guess the password you can see the secret message");
 	// 4. If their guess matches the password, show them the secret message
-String guess = JOptionPane.showInputDialog("Now guess");
+String guess = JOptionPane.showInputDialog("Now guess the password");
 	// 5. If the password does not match, pop-up "INTRUDER!!"
-
+if (guess.equals(password)) {
+	JOptionPane.showMessageDialog(null, "Here is the secret message: " + message);
+}else {
+	JOptionPane.showMessageDialog(null, "Intruder!!!");
+}
 }
 }
