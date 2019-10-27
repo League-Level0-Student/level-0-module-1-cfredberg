@@ -21,13 +21,24 @@ String coffinAnswer = JOptionPane.showInputDialog("Who makes it, has no need of 
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
 if (coffinAnswer.equalsIgnoreCase("a coffin") || coffinAnswer.equalsIgnoreCase("coffin")) {
 	JOptionPane.showMessageDialog(null, "Correct");
+	score++;
+	JOptionPane.showMessageDialog(null, "Your score is: " + score);
 }else {
 	JOptionPane.showMessageDialog(null, "Wrong!\r\n The correct answer is 'coffin'.");
 }
 		// 5. Otherwise, say "wrong" and tell them the answer
 
 		// 6. Add some more riddles
+String stampA = JOptionPane.showInputDialog("What can travel around the world while staying in a corner?");
+if (stampA.equalsIgnoreCase("stamp") || stampA.equalsIgnoreCase("a stamp")) {
+	JOptionPane.showMessageDialog(null, "Correct!");
+	score++;
+	JOptionPane.showMessageDialog(null, "Your final score is: " + score);
 
+} else {
+	JOptionPane.showMessageDialog(null, "Wrong.\r\n The correct answer is 'stamp'.");
+	JOptionPane.showMessageDialog(null, "Your final score is: " + score);
+}
 		// 2. Make a pop up to show the score.
 		
 	}
